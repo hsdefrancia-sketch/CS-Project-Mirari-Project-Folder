@@ -28,7 +28,41 @@ def mechanics():
     print("3.) Most importantly is to express yourself and have fun!!!!:>>")
     return mechanics()
 
+def mirari_floris():
+    print("Questions:"
+          "")
+
+def mirari_ferae():
+    print("questions")
+
+def mirari_souls():
+    print("questions")
+
+def desciptions():
+    print("descriptions")
+
+def settings():
+    print("settings")
+
+def exit():
+    exit()
+
 choice = input("Please input the NUMBER of your choice:")
-if choice == "6":
+
+if choice == 7:
+    def mechanics()
     print("You have reached the game mechanics")
+elif choice == 1:
+    def mirari_floris()
+elif choice == 2:
+    def mirari_ferae()
+elif choice == 3:
+    def mirari_souls()
+elif choice == 4:
+    def desciptions()
+elif choice == 5:
+    def settings()
+elif choice == 6:
+    def exit()
     
+
