@@ -1,0 +1,37 @@
+[
+    {
+      "quiz_name": "Mirari Floris",
+      "question": "What color would you choose?",
+      "A": "Red",
+      "B": "Purple",
+      "C": "Pink"
+    },
+    {
+      "quiz_name": "Mirari Floris",
+      "question": "If you were to be an avatar what element would you choose?",
+      "A": "Water",
+      "B": "Earth",
+      "C": "Air"
+    },
+    {
+     "quiz_name": "Mirari Floris",
+      "question": "What love trope would you choose?",
+      "A": "Friends to lovers",
+      "B": "Mafia Boss",
+      "C": "Strangers to lovers"
+    },
+    {
+    "quiz_name": "Mirari Floris",
+      "question": "Which gemstone is most beautiful to you?",
+      "A": "Cat's Eye",
+      "B": "Amethyst",
+      "C": "Sapphire"
+    },
+  {
+    "quiz_name": "Mirari Floris",
+      "question": "What is the most preferred scenery?",
+      "A": "Sunset in flower meadows",
+      "B": "Sunrise in a snowy mountain peak",
+      "C": "Afternoon in a tropical beach"
+  }
+]
