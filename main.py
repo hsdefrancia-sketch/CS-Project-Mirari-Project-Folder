@@ -14,20 +14,20 @@ try:
     print(" )___/ )   / )(_)( .-_)(   )__)( (__   )(     )    (  _)(_  )   / /(__)\  )   / _)(_")
     print("(__)  (_)\_)(_____)\____) (____)\___) (__)   (_/\/\_)(____)(_)\_)(__)(__)(_)\_)(____)")
 
-    print("The following are the options you can choose for the quizzes")
-    print("1.) Mirari Floris, What type of Flower are you?")
-    print("2.) Mirari Ferae, What type of Fauna are you?")
-    print("3.) Mirari Souls, What is your fantasy background?")
-    print("4.) exit, i don't wanna play")
-    print("5.) play again")
-    print("6.) Our game mechanics")
+    print("Main Menu:")
+    print(" 1. Mirari Floris, What type of Flower are you?"
+            "\n 2. Mirari Ferae, What type of Fauna are you?"
+            "\n 3. Mirari Souls, What is your Fantasy Background?"
+            "\n 4. Exit, I don't want to play."
+            "\n 5. Play again"
+            "\n 6. Game mechanics")
 
 
     def mechanics():
         print("You have reached the game mechanics")
-        print("1.) Based on your chosen quiz you will be given a set of questions:>")
-        print("2.) Your answers will influence the result of your quiz and your spirit identities")
-        print("3.) Most importantly is to express yourself and have fun!!!!:>>")
+        print("1.) Based on your chosen quiz, you will be given a set of questions:>")
+        print("2.) Your answers will influence the result of your quiz and your spirit identities.")
+        print("3.) Most importantly, express yourself and have fun!!!!:>>")
         return mechanics()
 
 
@@ -78,3 +78,4 @@ except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
+
