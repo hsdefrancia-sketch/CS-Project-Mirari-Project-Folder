@@ -59,9 +59,9 @@ try:
         return exit()
 
 
-    choice = input("Please input the NUMBER of your choice:")
+    choice = int(input("Please input the NUMBER of your choice: "))
 
-    if choice == 7:
+    if choice == 6:
         print(mechanics())
     elif choice == 1:
         print(mirari_floris())
@@ -78,4 +78,5 @@ except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
+
 
