@@ -1,61 +1,80 @@
-#Interface for project Mirari
-print("Welcome to our game")
-print(" ____  ____  _____   ____  ____  ___  ____    __  __  ____  ____    __    ____  ____ ")
-print("(  _ \(  _ \(  _  ) (_  _)( ___)/ __)(_  _)  (  \/  )(_  _)(  _ \  /__\  (  _ \(_  _)")
-print(" )___/ )   / )(_)( .-_)(   )__)( (__   )(     )    (  _)(_  )   / /(__)\  )   / _)(_")
-print("(__)  (_)\_)(_____)\____) (____)\___) (__)   (_/\/\_)(____)(_)\_)(__)(__)(_)\_)(____)")
+import json
+
+try:
+    # READING from the file
+    filename = "questions.json"
+    with open(filename, 'r') as file:
+        # Load the JSON data from the file
+        data = json.load(file)
+
+# Interface for project Mirari
+    print("Welcome to our game")
+    print(" ____  ____  _____   ____  ____  ___  ____    __  __  ____  ____    __    ____  ____ ")
+    print("(  _ \(  _ \(  _  ) (_  _)( ___)/ __)(_  _)  (  \/  )(_  _)(  _ \  /__\  (  _ \(_  _)")
+    print(" )___/ )   / )(_)( .-_)(   )__)( (__   )(     )    (  _)(_  )   / /(__)\  )   / _)(_")
+    print("(__)  (_)\_)(_____)\____) (____)\___) (__)   (_/\/\_)(____)(_)\_)(__)(__)(_)\_)(____)")
+
+    print("The following are the options you can choose for the quizzes")
+    print("1.) Mirari Floris, What type of Flower are you?")
+    print("2.) Mirari Ferae, What type of Fauna are you?")
+    print("3.) Mirari Souls, What is your fantasy background?")
+    print("4.) exit, i don't wanna play")
+    print("5.) play again")
+    print("6.) Our game mechanics")
 
 
-print("The following are the options you can choose for the quizzes")
-print("1.) Mirari Floris, What type of Flower are you?")
-print("2.) Mirari Ferae, What type of Fauna are you?")
-print("3.) Mirari Souls, What is your fantasy background?")
-print("4.) exit, i no wanna play")
-print("5.) play again")
-print("6.) Our game mechanics")
-
-def mechanics():
-    print("1.) Based on your chosen quiz you will be given a set of questions:>")
-    print("2.) Your answers will influence the result of your quiz and your spirit identities")
-    print("3.) Most importantly is to express yourself and have fun!!!!:>>")
-    return mechanics()
-
-def mirari_floris():
-    print("Questions:"
-          "")
-
-def mirari_ferae():
-    print("questions")
-
-def mirari_souls():
-    print("questions")
-
-def desciptions():
-    print("descriptions")
-
-def settings():
-    print("settings")
-
-def exit():
-    exit()
-
-choice = input("Please input the NUMBER of your choice:")
-
-if choice == 7:
-    def mechanics()
-    print("You have reached the game mechanics")
-elif choice == 1:
-    def mirari_floris()
-elif choice == 2:
-    def mirari_ferae()
-elif choice == 3:
-    def mirari_souls()
-elif choice == 4:
-    def desciptions()
-elif choice == 5:
-    def settings()
-elif choice == 6:
-    def exit()
-    
+    def mechanics():
+        print("You have reached the game mechanics")
+        print("1.) Based on your chosen quiz you will be given a set of questions:>")
+        print("2.) Your answers will influence the result of your quiz and your spirit identities")
+        print("3.) Most importantly is to express yourself and have fun!!!!:>>")
+        return mechanics()
 
 
+    def mirari_floris():
+        for questions in data:
+            if questions["quiz_name"] == ["mirari_floris"]:
+                print(questions["questions"])
+        return mirari_floris()
+
+    def mirari_ferae():
+        for questions in data:
+            if questions["quiz_name"] == ["mirari_ferae"]:
+                print(questions["questions"])
+        return mirari_ferae()
+
+    def mirari_souls():
+        for questions in data:
+            if questions["quiz_name"] == ["mirari_souls"]:
+                print(questions["questions"])
+        return mirari_souls()
+
+    def desciptions():
+        for questions in data:
+            print(questions["descriptions"])
+        return desciptions()
+
+    def exit():
+        print("Goodbye have a nice day!!")
+        return exit()
+
+
+    choice = input("Please input the NUMBER of your choice:")
+
+    if choice == 7:
+        print(mechanics())
+    elif choice == 1:
+        print(mirari_floris())
+    elif choice == 2:
+        print(mirari_ferae())
+    elif choice == 3:
+        print(mirari_souls())
+    elif choice == 4:
+        print(desciptions())
+    elif choice == 5:
+        print(exit())
+
+except FileNotFoundError:
+    print("Error: The file 'data.json' was not found.")
+except json.JSONDecodeError as e:
+    print(f"Failed to decode JSON: {e}")
