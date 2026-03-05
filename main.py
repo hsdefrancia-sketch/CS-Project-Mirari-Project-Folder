@@ -9,10 +9,13 @@ try:
 
 # Interface for project Mirari
     print("Welcome to our game")
-    print(" ____  ____  _____   ____  ____  ___  ____    __  __  ____  ____    __    ____  ____ ")
-    print("(  _ \(  _ \(  _  ) (_  _)( ___)/ __)(_  _)  (  \/  )(_  _)(  _ \  /__\  (  _ \(_  _)")
-    print(" )___/ )   / )(_)( .-_)(   )__)( (__   )(     )    (  _)(_  )   / /(__)\  )   / _)(_")
-    print("(__)  (_)\_)(_____)\____) (____)\___) (__)   (_/\/\_)(____)(_)\_)(__)(__)(_)\_)(____)")
+    print(".---.             _             .-.   .-..-. _                   _ "
+            "\n: .; :           :_;           .' `.  : `' ::_;                 :_;"
+            "\n:  _.'.--.  .--. .-. .--.  .--.`. .'  : .. :.-..--.  .--.  .--. .-."
+            "\n: :   : ..'' .; :: :' '_.''  ..': :   : :; :: :: ..'' .; ; : ..': :"
+            "\n:_;   :_;  `.__.': :`.__.'`.__.':_;   :_;:_;:_;:_;  `.__,_;:_;  :_;"
+            "\n               .-. :                                               "
+            "\n               `._.'                                               ")
 
     print("Main Menu:")
     print(" 1. Mirari Floris, What type of Flower are you?"
@@ -78,5 +81,6 @@ except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
+
 
 
