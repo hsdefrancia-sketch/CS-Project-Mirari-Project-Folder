@@ -21,9 +21,9 @@ try:
     print(" 1. Mirari Floris, What type of Flower are you?"
             "\n 2. Mirari Ferae, What type of Fauna are you?"
             "\n 3. Mirari Souls, What is your Fantasy Background?"
-            "\n 4. Exit, I don't want to play."
+            "\n 4. Game mechanics"
             "\n 5. Play again"
-            "\n 6. Game mechanics")
+            "\n 6. Exit, I don't want to play.")
 
 
     def mechanics():
@@ -57,6 +57,15 @@ try:
             print(questions["descriptions"])
         return desciptions()
 
+    def play_again():
+        print("Main Menu:")
+        print(" 1. Mirari Floris, What type of Flower are you?"
+                "\n 2. Mirari Ferae, What type of Fauna are you?"
+                "\n 3. Mirari Souls, What is your Fantasy Background?"
+                "\n 4. Game mechanics"
+                "\n 5. Play again"
+                "\n 6. Exit, I don't want to play.")
+
     def exit():
         print("Goodbye have a nice day!!")
         return exit()
@@ -81,6 +90,7 @@ except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
+
 
 
 
