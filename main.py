@@ -38,6 +38,18 @@ try:
         for questions in data:
             if questions["quiz_name"] == ["mirari_floris"]:
                 print(questions["questions"])
+                print(questions["options"])
+                choice = input("Enter your anser [letter only] ")
+                while choice == "A" or choice == "B" or choice == "C":
+                        if choice == "A":
+                                sunflower = sunflower + 1
+                        elif choice == "B":
+                                hydrangea = hydrangea + 1
+                        elif choice == "C":
+                                carnation = carnation + 1
+                        else:
+                                print("Please enter a valid answer.")
+                
         return mirari_floris()
 
     def mirari_ferae():
@@ -45,12 +57,16 @@ try:
             if questions["quiz_name"] == ["mirari_ferae"]:
                 print(questions["questions"])
         return mirari_ferae()
-
+        #the flowers are sunflower hydreangea and Carnation btw
     def mirari_souls():
         for questions in data:
             if questions["quiz_name"] == ["mirari_souls"]:
                 print(questions["questions"])
+                print(questions["options"])
+                
+                        
         return mirari_souls()
+    
 
     def desciptions():
         for questions in data:
@@ -86,11 +102,28 @@ try:
     elif choice == 5:
         print(exit())
 
+
+    print("Your results are:")
+    floris_results = max(sunflower, hydrangea, carnation)
+    if max(sunflower, hydrangea, carnation) == carnation:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+    elif max(sunflower, hydrangea, carnation) == hydrangea:
+            print("Your spirit flower is the hydrangea,"
+                  "\n you are subtle and gentle"
+                  "\n keep you humility glowing!!")
+    elif max(sunflower, hydrangea, carnation) == sunflower:
+            print("Your spirit flower is the sunflower,"
+                  "\n you bring light to every day"
+                  "\n keep being the light of your own life!!")
+        
+
+
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
     print(f"Failed to decode JSON: {e}")
-
 
 
 
