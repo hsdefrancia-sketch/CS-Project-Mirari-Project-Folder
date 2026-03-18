@@ -1,4 +1,5 @@
 import json
+import time
 
 try:
     # READING from the file
@@ -19,6 +20,8 @@ try:
 
     # Interface for project Mirari
     print("Welcome to our game")
+    print("Drumroll Please !!!!!!!!")
+    time.sleep(2)
     print(".---.             _             .-.   .-..-. _                   _ "
           "\n: .; :           :_;           .' `.  : `' ::_;                 :_;"
           "\n:  _.'.--.  .--. .-. .--.  .--.`. .'  : .. :.-..--.  .--.  .--. .-."
@@ -27,6 +30,7 @@ try:
           "\n               .-. :                                               "
           "\n               `._.'                                               ")
 
+    time.sleep(1)
     print("Main Menu:")
     print(" 1. Mirari Floris, What type of Flower are you?"
           "\n 2. Mirari Ferae, What type of Fauna are you?"
@@ -55,12 +59,12 @@ try:
             print(floris["B"])
             print(floris["C"])
             choice = input("Enter your answer [letter only] ")
-            while choice == "A" or choice == "B" or choice == "C":
-                if choice == "A":
+            while choice == "A" or choice == "B" or choice == "C" or choice == "a" or choice == "b" or choice == "c":
+                if choice == "A" or choice == "a":
                     sunflower = sunflower + 1
-                elif choice == "B":
+                elif choice == "B" or choice == "b":
                     hydrangea = hydrangea + 1
-                elif choice == "C":
+                elif choice == "C" or choice == "c":
                     carnation = carnation + 1
                 else:
                     print("Please enter a valid answer.")
@@ -77,12 +81,12 @@ try:
             print(ferae["B"])
             print(ferae["C"])
             choice = input("Enter your answer [letter only] ")
-            while choice == "A" or choice == "B" or choice == "C":
-                if choice == "A":
+            while choice == "A" or choice == "B" or choice == "C" or choice == "a" or choice == "b" or choice == "c":
+                if choice == "A" or choice == "a":
                     lion = lion + 1
-                elif choice == "B":
+                elif choice == "B" or choice == "b":
                     horse = horse + 1
-                elif choice == "C":
+                elif choice == "C" or choice == "c":
                     monkey = monkey + 1
                 else:
                     print("Please enter a valid answer.")
@@ -100,12 +104,12 @@ try:
                 print(souls["B"])
                 print(souls["C"])
                 choice = input("Enter your answer [letter only] ")
-                while choice == "A" or choice == "B" or choice == "C":
-                    if choice == "A":
+                while choice == "A" or choice == "B" or choice == "C" or choice == "a" or choice == "b" or choice == "c":
+                    if choice == "A" or choice == "a":
                         Mermaid_queen = Mermaid_queen + 1
-                    elif choice == "B":
+                    elif choice == "B" or choice == "b":
                         Knight = Knight + 1
-                    elif choice == "C":
+                    elif choice == "C" or choice == "c":
                         Fairy = Fairy + 1
                     else:
                         print("Please enter a valid answer.")
@@ -150,6 +154,7 @@ try:
         print(exit())
 
     print("Your results are:")
+    time.sleep(2)
     if max(sunflower, hydrangea, carnation) == carnation:
         print("Your spirit flower is the carnation,"
               "\n you are usually fancy and delicate"
@@ -162,30 +167,31 @@ try:
         print("Your spirit flower is the sunflower,"
               "\n you bring light to every day"
               "\n keep being the light of your own life!!")
-        
 
-    if max(sunflower, hydrangea, carnation) == carnation:
+
+    if max(lion, horse, monkey) == lion:
         print("Your spirit flower is the carnation,"
               "\n you are usually fancy and delicate"
               "\n keep dedicating yourself!!")
-    elif max(sunflower, hydrangea, carnation) == hydrangea:
+    elif max(lion, horse, monkey) == horse:
         print("Your spirit flower is the hydrangea,"
               "\n you are subtle and gentle"
               "\n keep you humility glowing!!")
-    elif max(sunflower, hydrangea, carnation) == sunflower:
+    elif max(lion, horse, monkey) == monkey:
         print("Your spirit flower is the sunflower,"
               "\n you bring light to every day"
               "\n keep being the light of your own life!!")
-    
-    if max(sunflower, hydrangea, carnation) == carnation:
+
+
+    if max(Mermaid_queen, Fairy, Knight) == Fairy:
         print("Your spirit flower is the carnation,"
               "\n you are usually fancy and delicate"
               "\n keep dedicating yourself!!")
-    elif max(sunflower, hydrangea, carnation) == hydrangea:
+    elif max(Mermaid_queen, Fairy, Knight) == Knight:
         print("Your spirit flower is the hydrangea,"
               "\n you are subtle and gentle"
               "\n keep you humility glowing!!")
-    elif max(sunflower, hydrangea, carnation) == sunflower:
+    elif max(Mermaid_queen, Fairy, Knight) == Mermaid_queen:
         print("Your spirit flower is the sunflower,"
               "\n you bring light to every day"
               "\n keep being the light of your own life!!")
