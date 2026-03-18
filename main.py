@@ -118,8 +118,15 @@ try:
 
 
     def desciptions():
-        for questions in data:
-            print(questions["descriptions"])
+        print("Game Description:"
+              "\n Our game consists of 3 quizzes that will determine:"
+              "\n 1. Your spirit animal!"
+              "\n 2. What flower represents you!"
+              "\n 3. Your spirit fantasy background!"
+              "\n This is a fun and engaging game for everyone."
+              "\n Human, monster, unicorns. Whatever you are it doesn't matter."
+              "\n What matters is that you enjoy!"
+              "\n Have fun!!!")
         return desciptions()
 
 
