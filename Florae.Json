@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What color would you choose?",
+        "A": "Blue",
+        "B": "Green",
+        "C": "Yellow"
+    },
+    {
+        "question": "What is the most preferred scenery?",
+        "A": "Sunset in flower meadows",
+        "B": "Sunrise in a snowy mountain peak",
+        "C": "Afternoon in a tropical beach"
+
+    },
+    {
+        "question": "If you were to be an avatar what element would you choose?",
+        "A": "Water",
+        "B": "Air",
+        "C": "Fire"
+    },
+    {
+        "question": "What Shakespeare's literature is your most preffered?",
+        "A": "The Tempest",
+        "B": "Julius Caesar",
+        "C": "The Hamlet"
+    },
+    {
+        "question": "Which genre of movies is your most preffered?",
+        "A": "Romance",
+        "B": "Action",
+        "C": "Mystery"
+    }
+
+]
