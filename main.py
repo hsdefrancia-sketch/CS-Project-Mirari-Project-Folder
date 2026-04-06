@@ -18,6 +18,14 @@ try:
         # Load the JSON data from the file
         data = json.load(file)
 
+	# Ansi codes
+	red = "\e[1;31m"
+	green = "\e[1;32m"
+	yellow = "\e[1;33m"
+	blue = "\e[1;34m"
+	purple = "\e[1;35m"
+	cyan = "\e[1;36m"
+		
     # Interface for project Mirari
     print("Welcome to our game")
     print("Drumroll Please !!!!!!!!")
