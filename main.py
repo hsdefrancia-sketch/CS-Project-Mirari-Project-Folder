@@ -18,7 +18,7 @@ try:
         # Load the JSON data from the file
         data = json.load(file)
 
-	# Ansi codes
+	# ANSI codes (DECORATIVE TEXT FORMATS)
 	black = "\033[0;30m"
 	red = "\033[0;31m"
     green = "\033[0;32m"
