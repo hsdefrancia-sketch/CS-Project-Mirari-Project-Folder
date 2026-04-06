@@ -18,32 +18,12 @@ try:
         # Load the JSON data from the file
         data = json.load(file)
 
-	# ANSI codes (DECORATIVE TEXT FORMATS)
-	black = "\033[0;30m"
-	red = "\033[0;31m"
-    green = "\033[0;32m"
-    brown = "\033[0;33m"
-    blue = "\033[0;34m"
-    purple = "\033[0;35m"
-    cyan = "\033[0;36m"
-    light_gray = "\033[0;37m"
-    dark_gray = "\033[1;30m"
-    light_red = "\033[1;31m"
-    light_green = "\033[1;32m"
-    yellow = "\033[1;33m"
-    light_blue = "\033[1;34m"
-    light_purple = "\033[1;35m"
-    light_cyan = "\033[1;36m"
-    light_white = "\033[1;37m"
-    bold = "\033[1m"
-    faint = "\033[2m"
-    italic = "\033[3m"
-	reset = "\033[0m"
-		
     # Interface for project Mirari
     print("Welcome to our game")
+
+
     print("Drumroll Please !!!!!!!!")
-    time.sleep(2)
+    time.sleep(.5)
     print(".---.             _             .-.   .-..-. _                   _ "
           "\n: .; :           :_;           .' `.  : `' ::_;                 :_;"
           "\n:  _.'.--.  .--. .-. .--.  .--.`. .'  : .. :.-..--.  .--.  .--. .-."
@@ -52,7 +32,7 @@ try:
           "\n               .-. :                                               "
           "\n               `._.'                                               ")
 
-    time.sleep(1)
+    time.sleep(.2)
     print("Main Menu:")
     print(" 1. Mirari Floris, What type of Flower are you?"
           "\n 2. Mirari Ferae, What type of Fauna are you?"
@@ -67,7 +47,7 @@ try:
         print("1.) Based on your chosen quiz, you will be given a set of questions:>")
         print("2.) Your answers will influence the result of your quiz and your spirit identities.")
         print("3.) Most importantly, express yourself and have fun!!!!:>>")
-        return mechanics()
+
 
     sunflower = 0
     hydrangea = 0
@@ -149,7 +129,8 @@ try:
               "\n Human, monster, unicorns. Whatever you are it doesn't matter."
               "\n What matters is that you enjoy!"
               "\n Have fun!!!")
-        return desciptions()
+
+
 
 
     def play_again():
@@ -160,98 +141,105 @@ try:
               "\n 4. Game mechanics"
               "\n 5. Play again"
               "\n 6. Exit, I don't want to play.")
+        choice = int(input("Please input the NUMBER of your choice: "))
 
 
     def exit():
         print("Goodbye have a nice day!!")
-        return exit()
+
 
 
     choice = int(input("Please input the NUMBER of your choice: "))
 
     if choice == 6:
-        print(mechanics())
+        print(exit())
     elif choice == 1:
         print(mirari_floris())
+        print(play_again())
     elif choice == 2:
         print(mirari_ferae())
+        print(play_again())
     elif choice == 3:
         print(mirari_souls())
+        print(play_again())
     elif choice == 4:
+        print(mechanics())
         print(desciptions())
+        print(play_again())
     elif choice == 5:
-        print(exit())
+        print(play_again())
 
-    print("Your results are:")
-    time.sleep(2)
-    if max(sunflower, hydrangea, carnation) == carnation:
-        print("""
-You appear to be a Carnation, 
-	The Florescence deity incarnate
+    if choice == 1 :
+        print("Your results are:")
+        time.sleep(2)
+        if max(sunflower, hydrangea, carnation) == carnation:
+            print("""
+    You appear to be a Carnation, 
+        The Florescence deity incarnate
+    
+        As vigorous winds attempt to uproot it from love
+        It remains fascinating, as it is just a delicate statue
+        With nothing else but a deep sense of respect for others""")
 
-    As vigorous winds attempt to uproot it from love
-    It remains fascinating, as it is just a delicate statue
-    With nothing else but a deep sense of respect for others""")
+        elif max(sunflower, hydrangea, carnation) == hydrangea:
+            print("""
+    You appear to be a Hydrangea
+        The Triumphant veil of clouds
+    
+        As dreams persist, they hold an abundance of hearts
+        Rich with overflowing glam, the prosperity of beauty
+        Yet wherever it expresses heartfelt gratitude""")
 
-    elif max(sunflower, hydrangea, carnation) == hydrangea:
-        print("""
-You appear to be a Hydrangea
-	The Triumphant veil of clouds
+        elif max(sunflower, hydrangea, carnation) == sunflower:
+            print("""
+    You appear to be a Sunflower
+        The Helios’ ultimate laudation
+    
+        Hugging the sun with open arms, it cherishes happiness
+        The radiating positivity reminds everybody of alms
+        When triumphant ends, keep smiling, for it is a beauty""")
 
-	As dreams persist, they hold an abundance of hearts
-	Rich with overflowing glam, the prosperity of beauty
-	Yet wherever it expresses heartfelt gratitude""")
+    if choice == 2:
+        if max(lion, horse, monkey) == lion:
+            print("""
+    You appear to be a Lion
+        The embodiment of the mightiest
+    
+        For the fierce, and all invigorated by your passion of strife. 
+        As the lands rise to climax, the cup's filled with fight
+        The Prominent compass of the north is the jurisdiction""")
 
-    elif max(sunflower, hydrangea, carnation) == sunflower:
-        print("""
-You appear to be a Sunflower
-	The Helios’ ultimate laudation
+        elif max(lion, horse, monkey) == horse:
+            print("""
+    You appear to be a Horse
+    The fleeting-time fluorescence
+    
+    Galloping restricting chains, disintegrating the choking miasma
+    For the light from its path restores mankind’s expression
+    Upon free lands where peculiarity is normality, filled with creativity""")
 
-	Hugging the sun with open arms, it cherishes happiness
-	The radiating positivity reminds everybody of alms
-	When triumphant ends, keep smiling, for it is a beauty""")
+        elif max(lion, horse, monkey) == monkey:
+            print("""
+    You appear to be a Monkey
+        The traversing brilliance of Cor’
+    
+        Brazen halos surrounded by fire, as the mind erupts with acumen
+        With easy adaptation to the shallow depths with crazed ease
+        Abundant brilliance and mischief control the traversing mind""")
 
-
-    if max(lion, horse, monkey) == lion:
-        print("""
-You appear to be a Lion
-    The embodiment of the mightiest
-
-    For the fierce, and all invigorated by your passion of strife. 
-    As the lands rise to climax, the cup's filled with fight
-    The Prominent compass of the north is the jurisdiction""")
-
-    elif max(lion, horse, monkey) == horse:
-        print("""
-You appear to be a Horse
-The fleeting-time fluorescence
-
-Galloping restricting chains, disintegrating the choking miasma
-For the light from its path restores mankind’s expression
-Upon free lands where peculiarity is normality, filled with creativity""")
-
-    elif max(lion, horse, monkey) == monkey:
-        print("""
-You appear to be a Monkey
-    The traversing brilliance of Cor’
-
-    Brazen halos surrounded by fire, as the mind erupts with acumen
-    With easy adaptation to the shallow depths with crazed ease
-    Abundant brilliance and mischief control the traversing mind""")
-
-
-    if max(Mermaid_queen, Fairy, Knight) == Fairy:
-        print("Your spirit flower is the carnation,"
-              "\n you are usually fancy and delicate"
-              "\n keep dedicating yourself!!")
-    elif max(Mermaid_queen, Fairy, Knight) == Knight:
-        print("Your spirit flower is the hydrangea,"
-              "\n you are subtle and gentle"
-              "\n keep you humility glowing!!")
-    elif max(Mermaid_queen, Fairy, Knight) == Mermaid_queen:
-        print("Your spirit flower is the sunflower,"
-              "\n you bring light to every day"
-              "\n keep being the light of your own life!!")
+    if choice == 3:
+        if max(Mermaid_queen, Fairy, Knight) == Fairy:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(Mermaid_queen, Fairy, Knight) == Knight:
+            print("Your spirit flower is the hydrangea,"
+                  "\n you are subtle and gentle"
+                  "\n keep you humility glowing!!")
+        elif max(Mermaid_queen, Fairy, Knight) == Mermaid_queen:
+            print("Your spirit flower is the sunflower,"
+                  "\n you bring light to every day"
+                  "\n keep being the light of your own life!!")
 
 
 except FileNotFoundError:
