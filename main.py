@@ -163,31 +163,59 @@ try:
     print("Your results are:")
     time.sleep(2)
     if max(sunflower, hydrangea, carnation) == carnation:
-        print("Your spirit flower is the carnation,"
-              "\n you are usually fancy and delicate"
-              "\n keep dedicating yourself!!")
+        print("""
+You appear to be a Carnation, 
+	The Florescence deity incarnate
+
+    As vigorous winds attempt to uproot it from love
+    It remains fascinating, as it is just a delicate statue
+    With nothing else but a deep sense of respect for others""")
+
     elif max(sunflower, hydrangea, carnation) == hydrangea:
-        print("Your spirit flower is the hydrangea,"
-              "\n you are subtle and gentle"
-              "\n keep you humility glowing!!")
+        print("""
+You appear to be a Hydrangea
+	The Triumphant veil of clouds
+
+	As dreams persist, they hold an abundance of hearts
+	Rich with overflowing glam, the prosperity of beauty
+	Yet wherever it expresses heartfelt gratitude""")
+
     elif max(sunflower, hydrangea, carnation) == sunflower:
-        print("Your spirit flower is the sunflower,"
-              "\n you bring light to every day"
-              "\n keep being the light of your own life!!")
+        print("""
+You appear to be a Sunflower
+	The Helios’ ultimate laudation
+
+	Hugging the sun with open arms, it cherishes happiness
+	The radiating positivity reminds everybody of alms
+	When triumphant ends, keep smiling, for it is a beauty""")
 
 
     if max(lion, horse, monkey) == lion:
-        print("Your spirit flower is the carnation,"
-              "\n you are usually fancy and delicate"
-              "\n keep dedicating yourself!!")
+        print("""
+You appear to be a Lion
+    The embodiment of the mightiest
+
+    For the fierce, and all invigorated by your passion of strife. 
+    As the lands rise to climax, the cup's filled with fight
+    The Prominent compass of the north is the jurisdiction""")
+
     elif max(lion, horse, monkey) == horse:
-        print("Your spirit flower is the hydrangea,"
-              "\n you are subtle and gentle"
-              "\n keep you humility glowing!!")
+        print("""
+You appear to be a Horse
+The fleeting-time fluorescence
+
+Galloping restricting chains, disintegrating the choking miasma
+For the light from its path restores mankind’s expression
+Upon free lands where peculiarity is normality, filled with creativity""")
+
     elif max(lion, horse, monkey) == monkey:
-        print("Your spirit flower is the sunflower,"
-              "\n you bring light to every day"
-              "\n keep being the light of your own life!!")
+        print("""
+You appear to be a Monkey
+    The traversing brilliance of Cor’
+
+    Brazen halos surrounded by fire, as the mind erupts with acumen
+    With easy adaptation to the shallow depths with crazed ease
+    Abundant brilliance and mischief control the traversing mind""")
 
 
     if max(Mermaid_queen, Fairy, Knight) == Fairy:
