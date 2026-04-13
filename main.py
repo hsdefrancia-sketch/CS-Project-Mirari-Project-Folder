@@ -55,12 +55,14 @@ try:
             choice = input("Enter your answer [letter only]: ")
         return choice
 
+
     def play_again():
         choice = input("\n Do you want to play again? [y/n]: ")
         while choice not in ["y", "n", "Y", "N"]:
             print("Please enter a valid answer.")
             choice = input("Do you want to play again? [y/n]: ")
         return choice
+
 
     # Information about the game
     def mechanics():
@@ -81,6 +83,7 @@ try:
               "\n What matters is that you enjoy!"
               "\n Have fun!!!")
 
+
     # Game quizzes
     def mirari_floris():
         sunflower = 0
@@ -89,9 +92,9 @@ try:
 
         for i in floris_data:
             print("\n" + i["question"])
-            print(i["A"])
-            print(i["B"])
-            print(i["C"])
+            print(f"A. {i["A"]}")
+            print(f"B. {i["B"]}")
+            print(f"C. {i["C"]}"
 
             choice = get_choice()
             if choice == "A" or choice == "a":
@@ -107,7 +110,7 @@ try:
             print("""
             You appear to be a Carnation, 
                 The Florescence deity incarnate
-    
+
                 As vigorous winds attempt to uproot it from love
                 It remains fascinating, as it is just a delicate statue
                 With nothing else but a deep sense of respect for others""")
@@ -116,7 +119,7 @@ try:
             print("""
             You appear to be a Hydrangea
                 The Triumphant veil of clouds
-    
+
                 As dreams persist, they hold an abundance of hearts
                 Rich with overflowing glam, the prosperity of beauty
                 Yet wherever it expresses heartfelt gratitude""")
@@ -125,10 +128,11 @@ try:
             print("""
             You appear to be a Sunflower
                 The Helios’ ultimate laudation
-    
+
                 Hugging the sun with open arms, it cherishes happiness
                 The radiating positivity reminds everybody of alms
                 When triumphant ends, keep smiling, for it is a beauty""")
+
 
     def mirari_ferae():
         lion = 0
@@ -137,9 +141,9 @@ try:
 
         for i in floris_data:
             print("\n" + i["question"])
-            print(i["A"])
-            print(i["B"])
-            print(i["C"])
+            print(f"A. {i["A"]}")
+            print(f"B. {i["B"]}")
+            print(f"C. {i["C"]}"
 
             choice = get_choice()
             if choice == "A" or choice == "a":
@@ -155,7 +159,7 @@ try:
             print("""
         You appear to be a Lion
             The embodiment of the mightiest
-    
+
             For the fierce, and all invigorated by your passion of strife. 
             As the lands rise to climax, the cup's filled with fight
             The Prominent compass of the north is the jurisdiction""")
@@ -164,7 +168,7 @@ try:
             print("""
         You appear to be a Horse
         The fleeting-time fluorescence
-    
+
         Galloping restricting chains, disintegrating the choking miasma
         For the light from its path restores mankind’s expression
         Upon free lands where peculiarity is normality, filled with creativity""")
@@ -173,10 +177,11 @@ try:
             print("""
         You appear to be a Monkey
             The traversing brilliance of Cor’
-    
+
             Brazen halos surrounded by fire, as the mind erupts with acumen
             With easy adaptation to the shallow depths with crazed ease
             Abundant brilliance and mischief control the traversing mind""")
+
 
     def mirari_souls():
         mermaidQueen = 0
@@ -185,9 +190,9 @@ try:
 
         for i in floris_data:
             print("\n" + i["question"])
-            print(i["A"])
-            print(i["B"])
-            print(i["C"])
+            print(f"A. {i["A"]}")
+            print(f"B. {i["B"]}")
+            print(f"C. {i["C"]}"
 
             choice = get_choice()
             if choice == "A" or choice == "a":
@@ -211,6 +216,7 @@ try:
             print("Your spirit flower is the sunflower,"
                   "\n you bring light to every day"
                   "\n keep being the light of your own life!!")
+
 
     # Main
     while True:
