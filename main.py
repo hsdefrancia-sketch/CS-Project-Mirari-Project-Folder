@@ -82,7 +82,7 @@ try:
             print("\n" + i["question"])
             print(f"A. {i["A"]}")
             print(f"B. {i["B"]}")
-            print(f"C. {i["C"]}"
+            print(f"C. {i["C"]}")
 
             choice = get_choice()
             if choice == "A" or choice == "a":
@@ -127,11 +127,11 @@ try:
         horse = 0
         monkey = 0
 
-        for i in floris_data:
+        for i in ferae_data:
             print("\n" + i["question"])
             print(f"A. {i["A"]}")
             print(f"B. {i["B"]}")
-            print(f"C. {i["C"]}"
+            print(f"C. {i["C"]}")
 
             choice = get_choice()
             if choice == "A" or choice == "a":
@@ -176,11 +176,11 @@ try:
         knight = 0
         fairy = 0
 
-        for i in floris_data:
+        for i in souls_data:
             print("\n" + i["question"])
             print(f"A. {i["A"]}")
             print(f"B. {i["B"]}")
-            print(f"C. {i["C"]}"
+            print(f"C. {i["C"]}")
 
             choice = get_choice()
             if choice == "A" or choice == "a":
