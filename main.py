@@ -121,6 +121,33 @@ try:
                 The radiating positivity reminds everybody of alms
                 When triumphant ends, keep smiling, for it is a beauty""")
 
+        elif max(sunflower, hydrangea, carnation) == sunflower and hydrangea:
+            print("""
+            You appear to be a Sunflower
+                The Helios’ ultimate laudation
+
+                Hugging the sun with open arms, it cherishes happiness
+                The radiating positivity reminds everybody of alms
+                When triumphant ends, keep smiling, for it is a beauty""")\
+
+        elif max(sunflower, hydrangea, carnation) == sunflower and carnation:
+            print("""
+            You appear to be a Sunflower
+                The Helios’ ultimate laudation
+
+                Hugging the sun with open arms, it cherishes happiness
+                The radiating positivity reminds everybody of alms
+                When triumphant ends, keep smiling, for it is a beauty""")
+
+        elif max(sunflower, hydrangea, carnation) == hydrangea and carnation:
+            print("""
+            You appear to be a Sunflower
+                The Helios’ ultimate laudation
+
+                Hugging the sun with open arms, it cherishes happiness
+                The radiating positivity reminds everybody of alms
+                When triumphant ends, keep smiling, for it is a beauty""")
+
 
     def mirari_ferae():
         lion = 0
@@ -169,6 +196,35 @@ try:
             Brazen halos surrounded by fire, as the mind erupts with acumen
             With easy adaptation to the shallow depths with crazed ease
             Abundant brilliance and mischief control the traversing mind""")
+        
+        elif max(lion, horse, monkey) == monkey and horse:
+            print("""
+        You appear to be a Monkey
+            The traversing brilliance of Cor’
+
+            Brazen halos surrounded by fire, as the mind erupts with acumen
+            With easy adaptation to the shallow depths with crazed ease
+            Abundant brilliance and mischief control the traversing mind""")
+
+        elif max(lion, horse, monkey) == monkey and lion:
+            print("""
+        You appear to be a Monkey
+            The traversing brilliance of Cor’
+
+            Brazen halos surrounded by fire, as the mind erupts with acumen
+            With easy adaptation to the shallow depths with crazed ease
+            Abundant brilliance and mischief control the traversing mind""")
+
+        elif max(lion, horse, monkey) == horse and lion:
+            print("""
+        You appear to be a Monkey
+            The traversing brilliance of Cor’
+
+            Brazen halos surrounded by fire, as the mind erupts with acumen
+            With easy adaptation to the shallow depths with crazed ease
+            Abundant brilliance and mischief control the traversing mind""")
+
+
 
 
     def mirari_souls():
@@ -204,6 +260,20 @@ try:
             print("Your spirit flower is the sunflower,"
                   "\n you bring light to every day"
                   "\n keep being the light of your own life!!")
+            
+        elif max(mermaidQueen, fairy, knight) == fairy and knight:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(mermaidQueen, fairy, knight) == knight and mermaidQueen:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+
 
 
     # Main
