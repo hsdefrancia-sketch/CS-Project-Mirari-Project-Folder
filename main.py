@@ -123,30 +123,24 @@ try:
 
         elif max(sunflower, hydrangea, carnation) == sunflower and hydrangea:
             print("""
-            You appear to be a Sunflower
-                The Helios’ ultimate laudation
-
-                Hugging the sun with open arms, it cherishes happiness
-                The radiating positivity reminds everybody of alms
-                When triumphant ends, keep smiling, for it is a beauty""")\
+            You appear to be more unique as we thought! 
+	            The balance of sunlight and flowy solitude
+	            Like a lotus, full of pocus!
+	            With further talent there blooms beauty""")
 
         elif max(sunflower, hydrangea, carnation) == sunflower and carnation:
             print("""
-            You appear to be a Sunflower
-                The Helios’ ultimate laudation
-
-                Hugging the sun with open arms, it cherishes happiness
-                The radiating positivity reminds everybody of alms
-                When triumphant ends, keep smiling, for it is a beauty""")
+            You appear to be more unique as we thought! 
+	            The long lasting gaze of the sun
+	            A marigold Gold with hue
+	            As you shine everlastingly""")
 
         elif max(sunflower, hydrangea, carnation) == hydrangea and carnation:
             print("""
-            You appear to be a Sunflower
-                The Helios’ ultimate laudation
-
-                Hugging the sun with open arms, it cherishes happiness
-                The radiating positivity reminds everybody of alms
-                When triumphant ends, keep smiling, for it is a beauty""")
+            You appear to be more unique as we thought! 
+	            The shimmering flow captured by prosperous glow
+	            An orchid very durable
+	            Show your endurance in every syllable """)
 
 
     def mirari_ferae():
@@ -199,30 +193,24 @@ try:
         
         elif max(lion, horse, monkey) == monkey and horse:
             print("""
-        You appear to be a Monkey
-            The traversing brilliance of Cor’
-
-            Brazen halos surrounded by fire, as the mind erupts with acumen
-            With easy adaptation to the shallow depths with crazed ease
-            Abundant brilliance and mischief control the traversing mind""")
+        An independent and smart being I see
+	        A high energy free sees
+	        A Border Collie reaching all boundaries
+	        As you reach the top of your dreams""")
 
         elif max(lion, horse, monkey) == monkey and lion:
             print("""
-        You appear to be a Monkey
-            The traversing brilliance of Cor’
-
-            Brazen halos surrounded by fire, as the mind erupts with acumen
-            With easy adaptation to the shallow depths with crazed ease
-            Abundant brilliance and mischief control the traversing mind""")
+        A fierce and independent being
+	        Captured by the force of pride
+	        An orca vast as can be
+	        As curiosity sets you free""")
 
         elif max(lion, horse, monkey) == horse and lion:
             print("""
-        You appear to be a Monkey
-            The traversing brilliance of Cor’
-
-            Brazen halos surrounded by fire, as the mind erupts with acumen
-            With easy adaptation to the shallow depths with crazed ease
-            Abundant brilliance and mischief control the traversing mind""")
+        Uniqueness at its peak!
+	        A leader with tremendous force as can be 
+	        A meerkat the leader of the clan
+	        Speeds as lightning bolts""")
 
 
 
