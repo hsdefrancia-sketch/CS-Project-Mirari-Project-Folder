@@ -242,12 +242,12 @@ Of how such grace does it echo in the phantom night.""")
         time.sleep(1)
         if max(mermaidQueen, fairy, knight) == fairy and knight:
             print("""
-You appear to be a Floral Knight
+You appear to be an Astrologer
 
-With its sword, anchored and steady, 
-Axiomatic is its loyalty and allegiance towards its ideal society 
-From blows of roses, a sword is nailed upon a door of evil,
-Until then the harmonies of gleeful citizens turn everlasting""")
+An incandescent star leaves a trail of light behind, for others.
+Turning into a magnificent chandelier, made of multiple prisms. 
+An embedded testament towards the silent  crying night.
+As a halo made of pristine dust and debris forms upon a chosen person.""")
 
         elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
             print("""
@@ -289,11 +289,10 @@ The forsaken seas, have already set up a hurricane eye""")
             print("""
 You appear to be a knight
 
-Flowers bloom and flourish as a choir, and from then emerges.
-A little being spurting from the roots of delicate blossoms.
-Such a holy view to witness the birth from such a wondrous chrysalis.
-Marked to be a protector of nature, of all little beings, radiating comfort.""")
-
+With its sword, anchored and steady, 
+Axiomatic is its loyalty and allegiance towards its ideal society 
+From blows of roses, a sword is nailed upon a door of evil,
+Until then the harmonies of gleeful citizens turn everlasting""")
         
 
 
