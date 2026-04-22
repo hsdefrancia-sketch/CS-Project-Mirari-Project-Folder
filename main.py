@@ -234,29 +234,58 @@ try:
         print("\nYour results are:")
         time.sleep(1)
         if max(mermaidQueen, fairy, knight) == fairy and knight:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Floral Knight
+
+With its sword, anchored and steady, 
+Axiomatic is its loyalty and allegiance towards its ideal society 
+From blows of roses, a sword is nailed upon a door of evil,
+Until then the harmonies of gleeful citizens turn everlasting""")
+
         elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Driad
+
+Once upon a laurel tree, the dangers enclosing was soon to be
+Yet nature sheltered the poor thing to be, as the petioles embrace
+And as it reunites, it becomes the embodiment of ethereal
+Fragility is its weakness, yet even behind it is strength.""")
+
         elif max(mermaidQueen, fairy, knight) == knight and mermaidQueen:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Selkie
+
+As the memories of the tides glide, an echoing wholeness enters
+For the shore and the sea look beautiful together, although opposite.
+Yet a selkie adapts to it gracefully, accepting the two nations in its heart.
+It’s culture was always to be trifled with from now and upon duality.""")
+
         elif max(mermaidQueen, fairy, knight) == fairy:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Fairy
+
+Flowers bloom and flourish as a choir, and from then emerges.
+A little being spurting from the roots of delicate blossoms.
+Such a holy view to witness the birth from such a wondrous chrysalis.
+Marked to be a protector of nature, of all little beings, radiating comfort.""")
+    
         elif max(mermaidQueen, fairy, knight) == knight:
-            print("Your spirit flower is the hydrangea,"
-                  "\n you are subtle and gentle"
-                  "\n keep you humility glowing!!")
+            print("""
+You appear to be a mermaidQueen
+
+Tides ajourned from the depths of the Heart, a ruler's decree
+From the seas' crests, and through the cracks of the earth
+A mermaid whose illuminating intellect, brews a storm
+The forsaken seas, have already set up a hurricane eye""")
+
         elif max(mermaidQueen, fairy, knight) == mermaidQueen:
-            print("Your spirit flower is the sunflower,"
-                  "\n you bring light to every day"
-                  "\n keep being the light of your own life!!")
+            print("""
+You appear to be a knight
+
+Flowers bloom and flourish as a choir, and from then emerges.
+A little being spurting from the roots of delicate blossoms.
+Such a holy view to witness the birth from such a wondrous chrysalis.
+Marked to be a protector of nature, of all little beings, radiating comfort.""")
 
         
 
