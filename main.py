@@ -26,13 +26,14 @@ try:
     print("Welcome to our game!")
     print("Drumroll Please !!!!!!!!")
     time.sleep(.5)
-    print("\033[0;31m.---.             _             .-.   .-..-. _                   _ "
-          "\n\033[1;33m: .; :           :_;           .' `.  : `' ::_;                 :_;"
-          "\n\033[0;32m:  _.'.--.  .--. .-. .--.  .--.`. .'  : .. :.-..--.  .--.  .--. .-."
-          "\n\033[0;34m: :   : ..'' .; :: :' '_.''  ..': :   : :; :: :: ..'' .; ; : ..': :"
-          "\n\033[0;35m:_;   :_;  `.__.': :`.__.'`.__.':_;   :_;:_;:_;:_;  `.__,_;:_;  :_;"
-          "\n\033[1;35m               .-. :                                               "
-          "\n\033[1;37m               `._.'                                               ")
+    print(".---.             _             .-.   .-..-. _                   _ "
+          "\n: .; :           :_;           .' `.  : `' ::_;                 :_;"
+          "\n:  _.'.--.  .--. .-. .--.  .--.`. .'  : .. :.-..--.  .--.  .--. .-."
+          "\n: :   : ..'' .; :: :' '_.''  ..': :   : :; :: :: ..'' .; ; : ..': :"
+          "\n:_;   :_;  `.__.': :`.__.'`.__.':_;   :_;:_;:_;:_;  `.__,_;:_;  :_;"
+          "\n               .-. :                                               "
+          "\n               `._.'                                               ")
+
 
     # Input
     def get_choice():
@@ -93,14 +94,34 @@ try:
 
         print("\nYour results are:")
         time.sleep(1)
-        if max(sunflower, hydrangea, carnation) == carnation:
+        if max(sunflower, hydrangea, carnation) == sunflower and hydrangea:
             print("""
-            You appear to be a Carnation, 
-                The Florescence deity incarnate
+                    You appear to be more unique as we thought! 
+        	            The balance of sunlight and flowy solitude
+        	            Like a lotus, full of pocus!
+        	            With further talent there blooms beauty""")
 
-                As vigorous winds attempt to uproot it from love
-                It remains fascinating, as it is just a delicate statue
-                With nothing else but a deep sense of respect for others""")
+        elif max(sunflower, hydrangea, carnation) == sunflower and carnation:
+            print("""
+                        You appear to be more unique as we thought! 
+                            The long lasting gaze of the sun
+                            A marigold Gold with hue
+                            As you shine everlastingly""")
+
+        elif max(sunflower, hydrangea, carnation) == hydrangea and carnation:
+            print("""
+                            You appear to be more unique as we thought! 
+                                The shimmering flow captured by prosperous glow
+                                An orchid very durable
+                                Show your endurance in every syllable """)
+        elif max(sunflower, hydrangea, carnation) == carnation:
+            print("""
+                    You appear to be a Carnation, 
+                        The Florescence deity incarnate
+
+                        As vigorous winds attempt to uproot it from love
+                        It remains fascinating, as it is just a delicate statue
+                        With nothing else but a deep sense of respect for others""")
 
         elif max(sunflower, hydrangea, carnation) == hydrangea:
             print("""
@@ -119,27 +140,6 @@ try:
                 Hugging the sun with open arms, it cherishes happiness
                 The radiating positivity reminds everybody of alms
                 When triumphant ends, keep smiling, for it is a beauty""")
-
-        elif max(sunflower, hydrangea, carnation) == sunflower and hydrangea:
-            print("""
-            You appear to be more unique as we thought! 
-	            The balance of sunlight and flowy solitude
-	            Like a lotus, full of pocus!
-	            With further talent there blooms beauty""")
-
-        elif max(sunflower, hydrangea, carnation) == sunflower and carnation:
-            print("""
-            You appear to be more unique as we thought! 
-	            The long lasting gaze of the sun
-	            A marigold Gold with hue
-	            As you shine everlastingly""")
-
-        elif max(sunflower, hydrangea, carnation) == hydrangea and carnation:
-            print("""
-            You appear to be more unique as we thought! 
-	            The shimmering flow captured by prosperous glow
-	            An orchid very durable
-	            Show your endurance in every syllable """)
 
 
     def mirari_ferae():
@@ -163,7 +163,27 @@ try:
 
         print("\nYour results are:")
         time.sleep(1)
-        if max(lion, horse, monkey) == lion:
+        if max(lion, horse, monkey) == monkey and horse:
+            print("""
+                An independent and smart being I see
+        	        A high energy free sees
+        	        A Border Collie reaching all boundaries
+        	        As you reach the top of your dreams""")
+
+        elif max(lion, horse, monkey) == monkey and lion:
+            print("""
+                A fierce and independent being
+        	        Captured by the force of pride
+        	        An orca vast as can be
+        	        As curiosity sets you free""")
+
+        elif max(lion, horse, monkey) == horse and lion:
+            print("""
+                Uniqueness at its peak!
+        	        A leader with tremendous force as can be 
+        	        A meerkat the leader of the clan
+        	        Speeds as lightning bolts""")
+        elif max(lion, horse, monkey) == lion:
             print("""
         You appear to be a Lion
             The embodiment of the mightiest
@@ -189,37 +209,8 @@ try:
             Brazen halos surrounded by fire, as the mind erupts with acumen
             With easy adaptation to the shallow depths with crazed ease
             Abundant brilliance and mischief control the traversing mind""")
-         
-		elif max(lion, horse, monkey) == monkey and horse:
-            print("""
-You appear to be a Dragonfly
-	
-Ruling the golden skies, with a tailwind accompanied. 
-Its crowned agility, as it flies impeccable, ruling a kingdom
-Based upon buzzes of decrees, combating nuisances 
-For upon, whatever it has taken sacrifice to, for aviation has to""")
 
-
-        elif max(lion, horse, monkey) == monkey and lion:
-            print(""" 
-You appear to be a Crane
-	
-Upon the lake of its own appraisal, it practices its own performance
-For its cradled wings intertwined with wavering waves,
-Beholds upon a sight, a fountain of its own belief, 
-For its ideas and thoughts build a strong foundation of beauty""")
-
-    	elif max(lion, horse, monkey) == horse and lion:
-            print("""
-You appear to be a Fox
-	
-From the depths of the forests, does mischief arise heavily
-Flaunting their fiery coats, imitating a brazen burning fire.
-As upon the passion it radiates, as it pounces in the woodland.
-Of how such grace does it echo in the phantom night.
-""")
-
-
+        
 
 
     def mirari_souls():
@@ -243,7 +234,19 @@ Of how such grace does it echo in the phantom night.
 
         print("\nYour results are:")
         time.sleep(1)
-        if max(mermaidQueen, fairy, knight) == fairy:
+        if max(mermaidQueen, fairy, knight) == fairy and knight:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(mermaidQueen, fairy, knight) == knight and mermaidQueen:
+            print("Your spirit flower is the carnation,"
+                  "\n you are usually fancy and delicate"
+                  "\n keep dedicating yourself!!")
+        elif max(mermaidQueen, fairy, knight) == fairy:
             print("Your spirit flower is the carnation,"
                   "\n you are usually fancy and delicate"
                   "\n keep dedicating yourself!!")
@@ -255,36 +258,8 @@ Of how such grace does it echo in the phantom night.
             print("Your spirit flower is the sunflower,"
                   "\n you bring light to every day"
                   "\n keep being the light of your own life!!")
-            
-        elif max(mermaidQueen, fairy, knight) == fairy and knight:
-            print("""
-You appear to be a Driad
 
-Once upon a laurel tree, the dangers enclosing was soon to be
-Yet nature sheltered the poor thing to be, as the petioles embrace
-And as it reunites, it becomes the embodiment of ethereal
-Fragility is its weakness, yet even behind it is strength.""")
-
-        elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
-            print("""
-You appear to be a Floral Knight
-
-With its sword, anchored and steady, 
-Axiomatic is its loyalty and allegiance towards its ideal society 
-From blows of roses, a sword is nailed upon a door of evil,
-Until then the harmonies of gleeful citizens turn everlasting""")
-
-        elif max(mermaidQueen, fairy, knight) == knight and mermaidQueen:
-            print("""
-You appear to be a Selkie
-
-As the memories of the tides glide, an echoing wholeness enters
-For the shore and the sea look beautiful together, although opposite.
-Yet a selkie adapts to it gracefully, accepting the two nations in its heart.
-It’s culture was always to be trifled with from now and upon duality.""")
-			
-
-
+        
 
 
     # Main
