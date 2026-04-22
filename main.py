@@ -189,22 +189,27 @@ try:
             Brazen halos surrounded by fire, as the mind erupts with acumen
             With easy adaptation to the shallow depths with crazed ease
             Abundant brilliance and mischief control the traversing mind""")
-        
-        elif max(lion, horse, monkey) == monkey and horse:
+         
+		elif max(lion, horse, monkey) == monkey and horse:
             print("""
-        An independent and smart being I see
-	        A high energy free sees
-	        A Border Collie reaching all boundaries
-	        As you reach the top of your dreams""")
+	You appear to be a Dragonfly
+	
+    Ruling the golden skies, with a tailwind accompanied. 
+	Its crowned agility, as it flies impeccable, ruling a kingdom
+	Based upon buzzes of decrees, combating nuisances 
+	For upon, whatever it has taken sacrifice to, for aviation has to""")
+
 
         elif max(lion, horse, monkey) == monkey and lion:
-            print("""
-        A fierce and independent being
-	        Captured by the force of pride
-	        An orca vast as can be
-	        As curiosity sets you free""")
+            print(""" 
+	You appear to be a Crane
+	
+    Upon the lake of its own appraisal, it practices its own performance
+	For its cradled wings intertwined with wavering waves,
+	Beholds upon a sight, a fountain of its own belief, 
+	For its ideas and thoughts build a strong foundation of beauty""")
 
-        elif max(lion, horse, monkey) == horse and lion:
+    	elif max(lion, horse, monkey) == horse and lion:
             print("""
         Uniqueness at its peak!
 	        A leader with tremendous force as can be 
@@ -249,17 +254,33 @@ try:
                   "\n keep being the light of your own life!!")
             
         elif max(mermaidQueen, fairy, knight) == fairy and knight:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Driad
+
+Once upon a laurel tree, the dangers enclosing was soon to be
+Yet nature sheltered the poor thing to be, as the petioles embrace
+And as it reunites, it becomes the embodiment of ethereal
+Fragility is its weakness, yet even behind it is strength.""")
+
         elif max(mermaidQueen, fairy, knight) == fairy and mermaidQueen:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Floral Knight
+
+With its sword, anchored and steady, 
+Axiomatic is its loyalty and allegiance towards its ideal society 
+From blows of roses, a sword is nailed upon a door of evil,
+Until then the harmonies of gleeful citizens turn everlasting""")
+
         elif max(mermaidQueen, fairy, knight) == knight and mermaidQueen:
-            print("Your spirit flower is the carnation,"
-                  "\n you are usually fancy and delicate"
-                  "\n keep dedicating yourself!!")
+            print("""
+You appear to be a Selkie
+
+As the memories of the tides glide, an echoing wholeness enters
+For the shore and the sea look beautiful together, although opposite.
+Yet a selkie adapts to it gracefully, accepting the two nations in its heart.
+It’s culture was always to be trifled with from now and upon duality.""")
+			
+
 
 
 
