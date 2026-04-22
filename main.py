@@ -211,10 +211,13 @@ try:
 
     	elif max(lion, horse, monkey) == horse and lion:
             print("""
-        Uniqueness at its peak!
-	        A leader with tremendous force as can be 
-	        A meerkat the leader of the clan
-	        Speeds as lightning bolts""")
+You appear to be a Fox
+	
+From the depths of the forests, does mischief arise heavily
+Flaunting their fiery coats, imitating a brazen burning fire.
+As upon the passion it radiates, as it pounces in the woodland.
+Of how such grace does it echo in the phantom night.
+""")
 
 
 
