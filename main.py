@@ -12,16 +12,6 @@ try:
     with open('souls.json', 'r') as f:
         souls_data = json.load(f)
 
-        # ANSI codes (DECORATIVE TEXT FORMATS)
-    red = "\033[0;31m"
-    green = "\033[0;32m"
-    blue = "\033[0;34m"
-    purple = "\033[0;35m"
-    cyan = "\033[0;36m"
-    yellow = "\033[1;33m"
-    italic = "\033[3m"
-    reset = "\033[0m"
-
     # Interface for project Mirari
     print("Welcome to our game!")
     print("Drumroll Please !!!!!!!!")
