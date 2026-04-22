@@ -192,22 +192,22 @@ try:
          
 		elif max(lion, horse, monkey) == monkey and horse:
             print("""
-	You appear to be a Dragonfly
+You appear to be a Dragonfly
 	
-    Ruling the golden skies, with a tailwind accompanied. 
-	Its crowned agility, as it flies impeccable, ruling a kingdom
-	Based upon buzzes of decrees, combating nuisances 
-	For upon, whatever it has taken sacrifice to, for aviation has to""")
+Ruling the golden skies, with a tailwind accompanied. 
+Its crowned agility, as it flies impeccable, ruling a kingdom
+Based upon buzzes of decrees, combating nuisances 
+For upon, whatever it has taken sacrifice to, for aviation has to""")
 
 
         elif max(lion, horse, monkey) == monkey and lion:
             print(""" 
-	You appear to be a Crane
+You appear to be a Crane
 	
-    Upon the lake of its own appraisal, it practices its own performance
-	For its cradled wings intertwined with wavering waves,
-	Beholds upon a sight, a fountain of its own belief, 
-	For its ideas and thoughts build a strong foundation of beauty""")
+Upon the lake of its own appraisal, it practices its own performance
+For its cradled wings intertwined with wavering waves,
+Beholds upon a sight, a fountain of its own belief, 
+For its ideas and thoughts build a strong foundation of beauty""")
 
     	elif max(lion, horse, monkey) == horse and lion:
             print("""
