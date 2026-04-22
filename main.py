@@ -115,12 +115,12 @@ try:
                                 Show your endurance in every syllable """)
         elif max(sunflower, hydrangea, carnation) == carnation:
             print("""
-                    You appear to be a Carnation, 
-                        The Florescence deity incarnate
+            You appear to be a Carnation, 
+                The Florescence deity incarnate
 
-                        As vigorous winds attempt to uproot it from love
-                        It remains fascinating, as it is just a delicate statue
-                        With nothing else but a deep sense of respect for others""")
+                As vigorous winds attempt to uproot it from love
+                It remains fascinating, as it is just a delicate statue
+                With nothing else but a deep sense of respect for others""")
 
         elif max(sunflower, hydrangea, carnation) == hydrangea:
             print("""
@@ -164,24 +164,31 @@ try:
         time.sleep(1)
         if max(lion, horse, monkey) == monkey and horse:
             print("""
-                An independent and smart being I see
-        	        A high energy free sees
-        	        A Border Collie reaching all boundaries
-        	        As you reach the top of your dreams""")
-
-        elif max(lion, horse, monkey) == monkey and lion:
-            print("""
-                A fierce and independent being
-        	        Captured by the force of pride
-        	        An orca vast as can be
-        	        As curiosity sets you free""")
+You appear to be a Dragonfly
+        
+Ruling the golden skies, with a tailwind accompanied. 
+Its crowned agility, as it flies impeccable, ruling a kingdom
+Based upon buzzes of decrees, combating nuisances 
+For whatever it has taken sacrifice to, is pure goodness.""")
 
         elif max(lion, horse, monkey) == horse and lion:
             print("""
-                Uniqueness at its peak!
-        	        A leader with tremendous force as can be 
-        	        A meerkat the leader of the clan
-        	        Speeds as lightning bolts""")
+You appear to be a Crane
+
+Upon the lake of its own appraisal, it practices its own performance
+For its cradled wings intertwined with wavering waves,
+Beholds upon a sight, a fountain of its own belief, 
+For its ideas and thoughts build a strong foundation of beauty""")
+
+        elif max(lion, horse, monkey) == monkey and lion:
+            print("""
+You appear to be a Fox
+
+From the depths of the forests, does mischief arise heavily
+Flaunting their fiery coats, imitating a brazen burning fire.
+As upon the passion it radiates, as it pounces in the woodland.
+Of how such grace does it echo in the phantom night.""")
+
         elif max(lion, horse, monkey) == lion:
             print("""
         You appear to be a Lion
