@@ -12,7 +12,7 @@ try:
     with open('souls.json', 'r') as f:
         souls_data = json.load(f)
 
-    # Interface for project Mirari
+    # Interface for our game Project Mirari
     print("Welcome to our game!")
     print("Drumroll Please !!!!!!!!")
     time.sleep(.5)
@@ -24,7 +24,8 @@ try:
           "\n\033[1;35m               .-. :                                               "
           "\n\033[1;37m               `._.'                                               ")
 
-    # Input
+
+    # Input validation
     def get_choice():
         choice = input("Enter your answer [letter only]: ")
         while choice not in ["A", "B", "C", "a", "b", "c"]:
@@ -43,14 +44,14 @@ try:
 
     # Information about the game
     def mechanics():
-        print("You have reached the game mechanics")
+        print("\nYou have reached the game mechanics")
         print("1.) Based on your chosen quiz, you will be given a set of questions:>")
         print("2.) Your answers will influence the result of your quiz and your spirit identities.")
         print("3.) Most importantly, express yourself and have fun!!!!:>>")
 
 
     def desciptions():
-        print("Game Description:"
+        print("\nGame Description:"
               "\n Our game consists of 3 quizzes that will determine:"
               "\n 1. Your spirit animal!"
               "\n 2. What flower represents you!"
@@ -61,7 +62,7 @@ try:
               "\n Have fun!!!")
 
 
-    # Game quizzes
+    # Game quizzes and what your results are
     def mirari_floris():
         sunflower = 0
         hydrangea = 0
@@ -155,7 +156,7 @@ try:
         if max(lion, horse, monkey) == monkey and horse:
             print("""
 You appear to be a Dragonfly
-        
+
 Ruling the golden skies, with a tailwind accompanied. 
 Its crowned agility, as it flies impeccable, ruling a kingdom
 Based upon buzzes of decrees, combating nuisances 
@@ -205,8 +206,6 @@ Of how such grace does it echo in the phantom night.""")
             Brazen halos surrounded by fire, as the mind erupts with acumen
             With easy adaptation to the shallow depths with crazed ease
             Abundant brilliance and mischief control the traversing mind""")
-
-        
 
 
     def mirari_souls():
@@ -265,7 +264,7 @@ Flowers bloom and flourish as a choir, and from then emerges.
 A little being spurting from the roots of delicate blossoms.
 Such a holy view to witness the birth from such a wondrous chrysalis.
 Marked to be a protector of nature, of all little beings, radiating comfort.""")
-    
+
         elif max(mermaidQueen, fairy, knight) == knight:
             print("""
 You appear to be a mermaidQueen
@@ -283,13 +282,12 @@ With its sword, anchored and steady,
 Axiomatic is its loyalty and allegiance towards its ideal society 
 From blows of roses, a sword is nailed upon a door of evil,
 Until then the harmonies of gleeful citizens turn everlasting""")
-        
 
 
-    # Main
+    # Main loop of the game
     while True:
         time.sleep(.2)
-        print("Main Menu:")
+        print("\nMain Menu:")
         print(" 1. Mirari Floris, What type of Flower are you?"
               "\n 2. Mirari Ferae, What type of Fauna are you?"
               "\n 3. Mirari Souls, What is your Fantasy Background?"
@@ -305,10 +303,16 @@ Until then the harmonies of gleeful citizens turn everlasting""")
 
         if choice == 1:
             mirari_floris()
+            if play_again() == "n" and "N":
+                break
         elif choice == 2:
             mirari_ferae()
+            if play_again() == "n" and "N":
+                break
         elif choice == 3:
             mirari_souls()
+            if play_again() == "n" and "N":
+                break
         elif choice == 4:
             desciptions()
         elif choice == 5:
